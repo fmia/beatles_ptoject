@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/icon" href="http://vignette3.wikia.nocookie.net/beatles/images/6/64/Favicon.ico/revision/latest?cb=20080606171039">
+	<title>The Beatles</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <ul class="w3-navbar w3-black">
+  	<img src="http://img04.deviantart.net/4d2d/i/2011/270/7/e/the_beatles_heads_by_w00den_sp00n-d4b5k1y.jpg" height="40px" width="40px" style="float:left"/>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Band</a></li>
+    <li><a href="#">Tour</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Beatles_logo.svg/2000px-Beatles_logo.svg.png"
+  style="width:100%" active>
+  <img class="mySlides" src="http://culturadjcr.com/wp-content/uploads/2015/10/69578_main_full.jpg"
+  style="width:100%">
+  <img class="mySlides" src="http://media4.s-nbcnews.com/i/streams/2014/January/140123/2D11403865-today-beatles-140123.jpg"
+  style="width:100%">
+</section>
+<br>
+<section>
+	<audio id="demo" src="The Beatles - Hello Goodbye.mp3" autoplay loop></audio>
+</section>
+<center>
+<section>
+  <button onclick="document.getElementById('demo').play()" style="background-color:white">&#9658;</button>
+  <button onclick="document.getElementById('demo').pause()" style="background-color:white">&#9724;</button>
+  <button onclick="document.getElementById('demo').volume+=0.1" style="background-color:white">&#10010;</button>
+  <button onclick="document.getElementById('demo').volume-=0.1" style="background-color:white">&#8211;</button>
+</section>
+</center>
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">THE BAND</h2>
+  <p class="w3-opacity"><i>We love music</i></p>
+  <p class="w3-justify">The Beatles were an English rock band, formed in Liverpool in 1960. 
+  With members John Lennon, Paul McCartney, George Harrison and Ringo Starr, they became widely regarded as the foremost and most influential act of the rock era. Rooted in skiffle, beat, and 1950s rock and roll, the Beatles later experimented with several musical styles, 
+  ranging from pop ballads and Indian music to psychedelia and hard rock, often incorporating classical elements and unconventional recording techniques in innovative ways. In the early 1960s, their enormous popularity first emerged as "Beatlemania", but as the group's music grew in sophistication, 
+  led by primary songwriters Lennon and McCartney, they came to be perceived as an embodiment of the ideals shared by the counterculture of the 1960s.</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>John</p>
+    <img src="http://blog.timesunion.com/philipmorris/files/2006/10/john-lennon.jpe" alt="John lennon" style="width:60%">
+    <p>Born and raised in Liverpool. His first band, the Quarrymen, evolved into the Beatles in 1960. When the group disbanded in 1970, 
+	Lennon embarked on a solo career that produced albums including "Imagine". After his marriage to Yoko Ono in 1969, 
+	he changed his name to John Ono Lennon. Lennon disengaged himself from the music business in 1975 to raise his infant son Sean, 
+	but re-emerged with Ono in 1980 with the new album Double Fantasy.</p>
+  </article>
+  <article class="w3-third">
+    <p>Paul</p>
+    <img src="http://thebeatles4.galeon.com/paul.jpg" alt="Paul Mcarthney" style="width:80%">
+    <p>McCartney has been recognised as one of the most successful composers and performers of all time. 
+	More than 2,200 artists have covered his Beatles song "Yesterday", more than any other copyrighted song in history. 
+	Wings' 1977 release "Mull of Kintyre" is one of the all-time best-selling singles in the UK. </p>
+  </article>
+  <article class="w3-third">
+    <p><strong>Ringo</strong></p>
+    <img src="http://ultimateclassicrock.com/files/2012/11/ringo-Keystone-hutton-archives-getty.jpg" alt="Ringo Starr" style="width:100%">
+    <p>When the Beatles formed in 1960, Starr was a member of another Liverpool group, Rory Storm and the Hurricanes. After achieving moderate success with that band in the UK and Hamburg, he quit the Hurricanes and joined the Beatles in August 1962, replacing Pete Best. 
+	Starr played key roles in the Beatles' films and appeared in numerous others. After the band's break-up in 1970, he released several successful singles including the US number four hit "It Don't Come Easy".</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">Powered by fsola</p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
