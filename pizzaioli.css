@@ -1,0 +1,132 @@
+html, body{
+    margin: 0px;
+}
+.main {
+    background-image: url(http://www.esencialblog.es/wp-content/uploads/2011/05/118418_700b1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+.main .container {  
+    position: relative;
+    top: 10px;
+}
+.container .izquierda dt a {
+    float: left;
+    position: relative;
+    display: inline;
+    text-decoration: none;
+    width: 100px;
+    left: 20px;
+    font-family: fantasy;
+}
+.container .derecha dt a{
+    float: right;
+    position: relative;
+    display: inline;
+    text-decoration: none;
+    width: 100px;
+    padding: 5px;
+    font-family: fantasy
+}
+
+.container .btn{
+    color: #151515;
+    font-weight: 100;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #151515;
+    
+}
+.container .btn:hover {
+    background-color:#151515;
+    color: beige;
+}
+.barra .container{
+background: url(http://www.obriens.ie/images/background-wood.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 10px
+}
+.barra .container h2{
+    font-family: fantasy;
+    color: beige;
+    font-weight: 100; 
+    margin: -1px;
+    text-align: center;   
+    margin-bottom: -20px;
+    padding: 10px;
+}
+.Productos{
+    background: url(http://www.obriens.ie/images/background-wood.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;   
+    margin-top: 20px;
+}
+.Productos .container{
+    text-align: center;
+    padding-bottom: 5px;
+
+}
+.Productos .container h2 a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    margin-left: 12px; 
+    text-align: center;
+}
+
+.container h2 a:hover{
+    color:#DBA901;
+}
+
+.container .img {
+    border: 2px solid black;
+    float: left;
+    display: inline;
+    position: relative;
+    margin: 2px;
+}
+.img{
+    padding-left: 12px;
+    padding-right: 4px;
+}
+.img img{
+    height: 200px;
+    width: 200px;
+}
+.clearfix {  
+    clear: both;
+}
+.pie {
+    background-color: black;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+}
+.pie .container{
+    display: inline;
+    color: beige;
+    font-family: fantasy;
+}
+.Pie p{
+    color: white;
+}
+.pie .left{
+    position: relative;
+    float: right;
+    margin-right: 15px;
+}
+.pie .rigth{
+    position: relative;
+    float: left;
+    margin-left: 30px;
+}
+    
+
+    
